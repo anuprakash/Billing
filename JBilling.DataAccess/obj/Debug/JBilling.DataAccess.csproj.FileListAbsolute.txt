@@ -1,0 +1,5 @@
+G:\Project Work\Visual Studio Projects\Billing\JBilling\JBilling.DataAccess\bin\Debug\JBilling.DataAccess.dll
+G:\Project Work\Visual Studio Projects\Billing\JBilling\JBilling.DataAccess\bin\Debug\JBilling.DataAccess.pdb
+G:\Project Work\Visual Studio Projects\Billing\JBilling\JBilling.DataAccess\obj\Debug\ResolveAssemblyReference.cache
+G:\Project Work\Visual Studio Projects\Billing\JBilling\JBilling.DataAccess\obj\Debug\JBilling.DataAccess.dll
+G:\Project Work\Visual Studio Projects\Billing\JBilling\JBilling.DataAccess\obj\Debug\JBilling.DataAccess.pdb

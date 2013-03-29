@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MenuItems>
+  <MenuItem type="container" text="Operations">
+    <MenuItem type="leaf" text="Add/Edit Parts" />
+    <MenuItem type="leaf" text="Add/Edit Sales Order" />
+    <MenuItem type="leaf" text="Add/Edit Sale Invoice" />
+  </MenuItem>
+</MenuItems>

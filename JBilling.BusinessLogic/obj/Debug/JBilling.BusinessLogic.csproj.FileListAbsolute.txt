@@ -1,0 +1,7 @@
+G:\Project Work\Visual Studio Projects\Billing\JBilling\JBilling.BusinessLogic\bin\Debug\JBilling.BusinessLogic.dll
+G:\Project Work\Visual Studio Projects\Billing\JBilling\JBilling.BusinessLogic\bin\Debug\JBilling.BusinessLogic.pdb
+G:\Project Work\Visual Studio Projects\Billing\JBilling\JBilling.BusinessLogic\bin\Debug\JBilling.DataAccess.dll
+G:\Project Work\Visual Studio Projects\Billing\JBilling\JBilling.BusinessLogic\bin\Debug\JBilling.DataAccess.pdb
+G:\Project Work\Visual Studio Projects\Billing\JBilling\JBilling.BusinessLogic\obj\Debug\ResolveAssemblyReference.cache
+G:\Project Work\Visual Studio Projects\Billing\JBilling\JBilling.BusinessLogic\obj\Debug\JBilling.BusinessLogic.dll
+G:\Project Work\Visual Studio Projects\Billing\JBilling\JBilling.BusinessLogic\obj\Debug\JBilling.BusinessLogic.pdb

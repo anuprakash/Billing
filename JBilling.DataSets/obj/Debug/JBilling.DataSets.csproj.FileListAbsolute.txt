@@ -1,0 +1,6 @@
+G:\Project Work\Visual Studio Projects\Billing\JBilling\JBilling.DataSets\bin\Debug\JBilling.DataSets.dll.config
+G:\Project Work\Visual Studio Projects\Billing\JBilling\JBilling.DataSets\bin\Debug\JBilling.DataSets.dll
+G:\Project Work\Visual Studio Projects\Billing\JBilling\JBilling.DataSets\bin\Debug\JBilling.DataSets.pdb
+G:\Project Work\Visual Studio Projects\Billing\JBilling\JBilling.DataSets\obj\Debug\ResolveAssemblyReference.cache
+G:\Project Work\Visual Studio Projects\Billing\JBilling\JBilling.DataSets\obj\Debug\JBilling.DataSets.dll
+G:\Project Work\Visual Studio Projects\Billing\JBilling\JBilling.DataSets\obj\Debug\JBilling.DataSets.pdb

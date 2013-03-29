@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MenuItems>
+  <MenuItem type="container" text="Stores">
+    <MenuItem type="leaf" text="Add/Edit Parts" formid="PartForm"/>
+  </MenuItem>
+  
+  <MenuItem type="container" text="Sales">
+    <MenuItem type="leaf" text="Add/Edit Sales Order" formid="SalesOrderForm"/>
+  </MenuItem>
+  
+  <MenuItem type="container" text="Accounts">
+    <MenuItem type="leaf" text="Add/Edit Sales Invoice" formid="SalesInvoiceForm"/>
+  </MenuItem>
+
+  <MenuItem type="container" text="Commercial">
+    <MenuItem type="leaf" text="Add/Edit Company" formid="CompanyForm"/>
+  </MenuItem>
+
+  <MenuItem type="container" text="Settings">
+    <MenuItem type="leaf" text="My Company Details" formid="CompanyDetailsForm"/>
+  </MenuItem>
+</MenuItems>
