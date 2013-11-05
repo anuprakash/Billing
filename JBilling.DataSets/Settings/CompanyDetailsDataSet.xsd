@@ -53,6 +53,9 @@
                 </xs:simpleType>
               </xs:element>
               <xs:element name="CompanyLogo" msprop:Generator_ColumnVarNameInTable="columnCompanyLogo" msprop:Generator_ColumnPropNameInRow="CompanyLogo" msprop:Generator_ColumnPropNameInTable="CompanyLogoColumn" msprop:Generator_UserColumnName="CompanyLogo" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="CompanyWebsite" msprop:Generator_ColumnVarNameInTable="columnCompanyWebsite" msprop:Generator_ColumnPropNameInRow="CompanyWebsite" msprop:Generator_ColumnPropNameInTable="CompanyWebsiteColumn" msprop:Generator_UserColumnName="CompanyWebsite" type="xs:string" minOccurs="0" />
+              <xs:element name="TaxRegistrationNo" msprop:Generator_ColumnVarNameInTable="columnTaxRegistrationNo" msprop:Generator_ColumnPropNameInRow="TaxRegistrationNo" msprop:Generator_ColumnPropNameInTable="TaxRegistrationNoColumn" msprop:Generator_UserColumnName="TaxRegistrationNo" type="xs:string" minOccurs="0" />
+              <xs:element name="ContactNo" msprop:Generator_ColumnVarNameInTable="columnContactNo" msprop:Generator_ColumnPropNameInRow="ContactNo" msprop:Generator_ColumnPropNameInTable="ContactNoColumn" msprop:Generator_UserColumnName="ContactNo" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

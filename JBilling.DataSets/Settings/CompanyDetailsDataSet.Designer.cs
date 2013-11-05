@@ -291,6 +291,12 @@ namespace JBilling.DataSets.Settings {
             
             private global::System.Data.DataColumn columnCompanyLogo;
             
+            private global::System.Data.DataColumn columnCompanyWebsite;
+            
+            private global::System.Data.DataColumn columnTaxRegistrationNo;
+            
+            private global::System.Data.DataColumn columnContactNo;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public CompanyDetailsDataTable() {
@@ -374,6 +380,30 @@ namespace JBilling.DataSets.Settings {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn CompanyWebsiteColumn {
+                get {
+                    return this.columnCompanyWebsite;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn TaxRegistrationNoColumn {
+                get {
+                    return this.columnTaxRegistrationNo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ContactNoColumn {
+                get {
+                    return this.columnContactNo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -409,7 +439,7 @@ namespace JBilling.DataSets.Settings {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public CompanyDetailsRow AddCompanyDetailsRow(string CompanyName, string CompanyDesc, string CompanyAddress, string CompanyEmail, string ContactName, byte[] CompanyLogo) {
+            public CompanyDetailsRow AddCompanyDetailsRow(string CompanyName, string CompanyDesc, string CompanyAddress, string CompanyEmail, string ContactName, byte[] CompanyLogo, string CompanyWebsite, string TaxRegistrationNo, string ContactNo) {
                 CompanyDetailsRow rowCompanyDetailsRow = ((CompanyDetailsRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         CompanyName,
@@ -417,7 +447,10 @@ namespace JBilling.DataSets.Settings {
                         CompanyAddress,
                         CompanyEmail,
                         ContactName,
-                        CompanyLogo};
+                        CompanyLogo,
+                        CompanyWebsite,
+                        TaxRegistrationNo,
+                        ContactNo};
                 rowCompanyDetailsRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowCompanyDetailsRow);
                 return rowCompanyDetailsRow;
@@ -446,6 +479,9 @@ namespace JBilling.DataSets.Settings {
                 this.columnCompanyEmail = base.Columns["CompanyEmail"];
                 this.columnContactName = base.Columns["ContactName"];
                 this.columnCompanyLogo = base.Columns["CompanyLogo"];
+                this.columnCompanyWebsite = base.Columns["CompanyWebsite"];
+                this.columnTaxRegistrationNo = base.Columns["TaxRegistrationNo"];
+                this.columnContactNo = base.Columns["ContactNo"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -463,6 +499,12 @@ namespace JBilling.DataSets.Settings {
                 base.Columns.Add(this.columnContactName);
                 this.columnCompanyLogo = new global::System.Data.DataColumn("CompanyLogo", typeof(byte[]), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCompanyLogo);
+                this.columnCompanyWebsite = new global::System.Data.DataColumn("CompanyWebsite", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCompanyWebsite);
+                this.columnTaxRegistrationNo = new global::System.Data.DataColumn("TaxRegistrationNo", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTaxRegistrationNo);
+                this.columnContactNo = new global::System.Data.DataColumn("ContactNo", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnContactNo);
                 this.columnCompanyName.MaxLength = 20;
                 this.columnCompanyDesc.MaxLength = 256;
                 this.columnCompanyAddress.MaxLength = 256;
@@ -706,6 +748,54 @@ namespace JBilling.DataSets.Settings {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string CompanyWebsite {
+                get {
+                    try {
+                        return ((string)(this[this.tableCompanyDetails.CompanyWebsiteColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CompanyWebsite\' in table \'CompanyDetails\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableCompanyDetails.CompanyWebsiteColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string TaxRegistrationNo {
+                get {
+                    try {
+                        return ((string)(this[this.tableCompanyDetails.TaxRegistrationNoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'TaxRegistrationNo\' in table \'CompanyDetails\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableCompanyDetails.TaxRegistrationNoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string ContactNo {
+                get {
+                    try {
+                        return ((string)(this[this.tableCompanyDetails.ContactNoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'ContactNo\' in table \'CompanyDetails\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableCompanyDetails.ContactNoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsCompanyNameNull() {
                 return this.IsNull(this.tableCompanyDetails.CompanyNameColumn);
             }
@@ -774,6 +864,42 @@ namespace JBilling.DataSets.Settings {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetCompanyLogoNull() {
                 this[this.tableCompanyDetails.CompanyLogoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsCompanyWebsiteNull() {
+                return this.IsNull(this.tableCompanyDetails.CompanyWebsiteColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetCompanyWebsiteNull() {
+                this[this.tableCompanyDetails.CompanyWebsiteColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsTaxRegistrationNoNull() {
+                return this.IsNull(this.tableCompanyDetails.TaxRegistrationNoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetTaxRegistrationNoNull() {
+                this[this.tableCompanyDetails.TaxRegistrationNoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsContactNoNull() {
+                return this.IsNull(this.tableCompanyDetails.ContactNoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetContactNoNull() {
+                this[this.tableCompanyDetails.ContactNoColumn] = global::System.Convert.DBNull;
             }
         }
         

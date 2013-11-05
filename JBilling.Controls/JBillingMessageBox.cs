@@ -19,5 +19,14 @@ namespace JBilling.Controls
         {
             MessageBox.Show(ex.Message, "JBilling Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
+
+        /// <summary>
+        /// Shows custom execption for JBilling application.
+        /// </summary>
+        /// <param name="ex">Exception to be shown to user.</param>
+        public static void ShowException(string ex)
+        {
+            MessageBox.Show(ex, "JBilling Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
     }
 }

@@ -40,23 +40,60 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commercial\CompanyDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CompanyDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="Sales\SalesOrderDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalesOrderDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Settings\CompanyDetailsDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CompanyDetailsDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Stores\PartDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PartDataSet.xsd</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="Commercial\CompanyDataSet.xsc">
+      <DependentUpon>CompanyDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Commercial\CompanyDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CompanyDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Commercial\CompanyDataSet.xss">
+      <DependentUpon>CompanyDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Sales\SalesOrderDataSet.xsc">
+      <DependentUpon>SalesOrderDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Sales\SalesOrderDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SalesOrderDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Sales\SalesOrderDataSet.xss">
+      <DependentUpon>SalesOrderDataSet.xsd</DependentUpon>
     </None>
     <None Include="Settings\CompanyDetailsDataSet.xsc">
       <DependentUpon>CompanyDetailsDataSet.xsd</DependentUpon>
@@ -68,6 +105,17 @@
     </None>
     <None Include="Settings\CompanyDetailsDataSet.xss">
       <DependentUpon>CompanyDetailsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Stores\PartDataSet.xsc">
+      <DependentUpon>PartDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Stores\PartDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PartDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Stores\PartDataSet.xss">
+      <DependentUpon>PartDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DataGrids>
+  <DataGrid name ="dgSalesOrder">
+    <Column mapto ="LineNumber" text="Line Number" readonly ="true" type="Text" width="100"/>
+    <Column mapto="DeliveryDate" text ="Date" type="DateTime" width="150"/>
+    <Column mapto ="PartNumber" text="Part Number" type="Text" width="150"/>
+    <Column mapto ="Quantity" text="Quantity" type="Text" width="150"/>
+    <Column mapto ="PartPrice" text="Part Price" type="Text" width="150"/>
+    <Column mapto ="LineTotal" text="Line Total" type="Text" width="150"/>
+  </DataGrid>
+</DataGrids>

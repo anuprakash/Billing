@@ -1,0 +1,1335 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NeoDataType.MyNeoReport</name>
+    </assembly>
+    <members>
+        <member name="T:NeoDataType.MyNeoReport.Forms.SqlTextboxForm">
+            <summary>
+            Form for Sql editor.
+            </summary>
+        </member>
+        <member name="T:NeoDataType.MyNeoReport.Forms.ScriptTextboxForm">
+            <summary>
+            Descrizione di riepilogo per ScriptTextboxForm.
+            </summary>
+        </member>
+        <member name="F:NeoDataType.MyNeoReport.Forms.ScriptTextboxForm.btnCancel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:NeoDataType.MyNeoReport.Forms.ScriptTextboxForm.btnOk">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:NeoDataType.MyNeoReport.Forms.ScriptTextboxForm.splitContainer1">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:NeoDataType.MyNeoReport.Forms.ScriptTextboxForm.scriptTextbox1">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:NeoDataType.MyNeoReport.Forms.ScriptTextboxForm.components">
+            <summary>
+            Variabile di progettazione necessaria.
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.Forms.ScriptTextboxForm.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.Forms.ScriptTextboxForm.Dispose(System.Boolean)">
+            <summary>
+            Pulire le risorse in uso.
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.Forms.ScriptTextboxForm.InitializeComponent">
+            <summary>
+            Metodo necessario per il supporto della finestra di progettazione. Non modificare
+            il contenuto del metodo con l'editor di codice.
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.Forms.ScriptTextboxForm.Text">
+            <summary>
+            Get the script text.
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.Forms.ScriptTextboxForm.Lines">
+            <summary>
+            Get the stript text lines.
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.Forms.ScriptTextboxForm.Hilighter">
+            <summary>
+            Get the hilighter used by the textbox.
+            </summary>
+        </member>
+        <member name="F:NeoDataType.MyNeoReport.Forms.SqlTextboxForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.Forms.SqlTextboxForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.Forms.SqlTextboxForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.Forms.SqlTextboxForm.#ctor">
+            <summary>
+            Form for Sql editor.
+            </summary>
+        </member>
+        <member name="T:NeoDataType.MyNeoReport.UI.DoubleBufferedPanel">
+            <summary>
+            Panel that support the double buffering
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.UI.DoubleBufferedPanel.#ctor">
+            <summary>
+            DoubleBufferedPanel Constructor
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.UI.DoubleBufferedPanel.Dispose(System.Boolean)">
+            <summary>
+            Pulire le risorse in uso.
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.UI.DoubleBufferedPanel.InitializeComponent">
+            <summary>
+            Metodo necessario per il supporto della finestra di progettazione. Non modificare
+            il contenuto del metodo con l'editor di codice.
+            </summary>
+        </member>
+        <member name="T:NeoDataType.MyNeoReport.UI.FileEditor">
+            <summary>
+            File editor
+            </summary>
+        </member>
+        <member name="F:NeoDataType.MyNeoReport.UI.FileEditor.Title">
+            <summary>
+            Get or set Dialog window title.
+            </summary>
+        </member>
+        <member name="F:NeoDataType.MyNeoReport.UI.FileEditor.Filter">
+            <summary>
+            Get or set Dialog window filter.
+            </summary>
+        </member>
+        <member name="T:NeoDataType.MyNeoReport.DataSourceBase">
+            <summary>
+            DataObjectBase is the base class for DataSource objects.
+            </summary>
+        </member>
+        <member name="T:NeoDataType.MyNeoReport.ObjectBase">
+            <summary>
+            Descrizione di riepilogo per ObjectBase.
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.ObjectBase.InitializeActionManager">
+            <summary>
+            Initialize the action manager.
+            If a report object has its specific action manager
+            the InitializeActionManager() should be overridden
+            with a call to base.SetActionManager(new MyActionManager(this));
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.ObjectBase.SetActionManager(NeoDataType.MyNeoReport.ActionManagerBase)">
+            <summary>
+            Assign the customized action manager to the this report object.
+            </summary>
+            <param name="am">The action manager to be assigned</param>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.ObjectBase.ActionManager">
+            <summary>
+            Return the action manager of this report object.
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.DataSourceBase.#ctor">
+            <summary>
+            Constructor of the DataSourceBase class
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.DataSourceBase.OnReadData">
+            <summary>
+            You must call OnReadData() 
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.DataSourceBase.Compute(System.String,System.String)">
+            <summary>
+            Get the result of the expression on data.
+            </summary>
+            <param name="expression">The expression to evaluate on a field
+            (AVG, COUNT, MAX, SUM).</param>
+            <param name="filter">The filter on the data to be computed.</param>
+            <returns>The result of expression.</returns>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.DataSourceBase.GetValue(System.String)">
+            <summary>
+            Get the value of specified field.
+            </summary>
+            <param name="fieldName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.DataSourceBase.GetNextValue(System.String)">
+            <summary>
+            Get the value of specified field of the next record.
+            </summary>
+            <param name="fieldName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.DataSourceBase.Open">
+            <summary>
+            Open the datasource object.
+            </summary>
+            <returns>True if the datasource was successfully opened.</returns>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.DataSourceBase.Close">
+            <summary>
+            Close the datasource and free the resources.
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.DataSourceBase.GetColumnsList">
+            <summary>
+            Get an array of the datacolumns of the datasource.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.DataSourceBase.ToString">
+            <summary>
+            Get the string rappresentation of the datasource object.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.DataSourceBase.Read">
+            <summary>
+            Read the next data and move the cursor position.
+            </summary>
+            <returns>True if there was a data to be read, False if the
+            end of data was reached.</returns>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.DataSourceBase.SerializeXml(System.String)">
+            <summary>
+            Serialize the data loadable by the DataSource, as it's set, in the 
+            file named [report_file_name].[section_name].xml,
+            i.e.: myreport.Details.xml.
+            Te file is written in the destination path passed to the method.
+            Use the DeserializeXml to load data from the same file.
+            </summary>
+            <param name="destDirectory">destination path</param>
+        </member>
+        <member name="E:NeoDataType.MyNeoReport.DataSourceBase.ReadData">
+            <summary>
+            Raised when a record was read.
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.DataSourceBase.TableInternal">
+            <summary>
+            Get or set the table that contains the data.
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.DataSourceBase.RowNumber">
+            <summary>
+            Get the record number for the current read data.
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.DataSourceBase.Section">
+            <summary>
+            Get the section that own the datasource
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.DataSourceBase.RowCount">
+            <summary>
+            Get the number of records provided by the datasource.
+            </summary>
+        </member>
+        <member name="T:NeoDataType.MyNeoReport.Shape">
+            <summary>
+            Descrizione di riepilogo per Label.
+            </summary>
+        </member>
+        <member name="T:NeoDataType.MyNeoReport.ItemBase">
+            <summary>
+            Base class for items in the report.
+            To add a new customized item it must inherit from ItemBase
+            </summary>
+        </member>
+        <member name="T:NeoDataType.MyNeoReport.PrintableObject">
+            <summary>
+            Descrizione di riepilogo per ObjectBase.
+            </summary>
+        </member>
+        <member name="T:NeoDataType.MyNeoReport.INotifyPropertyChanged">
+            <summary>
+            Define a provider for property changing notification
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.PrintableObject.#ctor">
+            <summary>
+            PrintableObject constructor
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.PrintableObject.IsLoaded">
+            <summary>
+            Get if the object is completely loaded from the disk.
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.PrintableObject.Engine">
+            <summary>
+            The core of printing layout engine.
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.PrintableObject.Report">
+            <summary>
+            The report that contains the object
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.PrintableObject.BeforePrintCode">
+            <summary>
+            C# script code to be executed before the object is printed.
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.PrintableObject.AfterPrintCode">
+            <summary>
+            C# script code to be executed after the object is printed.
+            </summary>
+        </member>
+        <member name="E:NeoDataType.MyNeoReport.PrintableObject.PropertyChanged">
+            <summary>
+            Raised when a property change is notified.
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.ItemBase.InitializeActionManager">
+            <summary>
+            Initialize the ActionManager for the item.
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.ItemBase.BringToFront">
+            <summary>
+            Brings the item to the front of the z-order.
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.ItemBase.MoveToSection(NeoDataType.MyNeoReport.Section)">
+            <summary>
+            Moves the item to the specified section.
+            </summary>
+            <param name="s">The destination item section.</param>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.ItemBase.SendToBack">
+            <summary>
+            Sends the item to the back of the z-order.
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.ItemBase.ToString">
+            <summary>
+            Get the string rapresentation of this object
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.ItemBase.Clone">
+            <summary>
+            Creates a new item that is a copy of the current instance.
+            </summary>
+            <returns>A new item that is a copy of this instance.</returns>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.ItemBase.NotifyPropertyChanged">
+            <summary>
+            Notify that one o more properties were changed
+            and raise the PropertyChanged event.
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.ItemBase.Section">
+            <summary>
+            The section that contains the item.
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.ItemBase.Angle">
+            <summary>
+            Get or set the rotation angle of the item.
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.ItemBase.Size">
+            <summary>
+            Get or set the size in pixels of the item.
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.ItemBase.RepeatOnNewPage">
+            <summary>
+            Get or set a value indicating if the item is repeated on the new page if a autosized section is splitted.
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.ItemBase.AntiAlias">
+            <summary>
+            Get or set if the item is smoothed.
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.ItemBase.Renderer">
+            <summary>
+            Get or set the renderer object for this item.
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.ItemBase.ToolBoxImage">
+            <summary>
+            Get the default icon of the item shown into a designer toolbox.
+            </summary>
+        </member>
+        <member name="T:NeoDataType.MyNeoReport.Label">
+            <summary>
+            Descrizione di riepilogo per Label.
+            </summary>
+        </member>
+        <member name="T:NeoDataType.MyNeoReport.Image">
+            <summary>
+            Descrizione di riepilogo per Label.
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.Image.UseImageFile">
+            <summary>
+            Define if the item should load the image dinamically 
+            from the file defined by ImageFile property or if the image is stored in the report
+            </summary>
+        </member>
+        <member name="T:NeoDataType.MyNeoReport.ObjectActionCollection">
+            <summary>
+            Strongly typed collection of MyNeoReport.Section.
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.ObjectActionCollection.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.ObjectActionCollection.Add(NeoDataType.MyNeoReport.ObjectAction)">
+            <summary>
+            Append a MyNeoReport.Section entry to this collection.
+            </summary>
+            <param name="value">MyNeoReport.Section instance.</param>
+            <returns>The position into which the new element was inserted.</returns>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.ObjectActionCollection.Contains(NeoDataType.MyNeoReport.ObjectAction)">
+            <summary>
+            Determines whether a specified MyNeoReport.Section instance is in this collection.
+            </summary>
+            <param name="value">MyNeoReport.Section instance to search for.</param>
+            <returns>True if the MyNeoReport.Section instance is in the collection; otherwise false.</returns>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.ObjectActionCollection.IndexOf(NeoDataType.MyNeoReport.ObjectAction)">
+            <summary>
+            Retrieve the index a specified MyNeoReport.Section instance is in this collection.
+            </summary>
+            <param name="value">MyNeoReport.Section instance to find.</param>
+            <returns>The zero-based index of the specified MyNeoReport.Section instance. If the object is not found, the return value is -1.</returns>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.ObjectActionCollection.Remove(NeoDataType.MyNeoReport.ObjectAction)">
+            <summary>
+            Removes a specified MyNeoReport.Section instance from this collection.
+            </summary>
+            <param name="value">The MyNeoReport.Section instance to remove.</param>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.ObjectActionCollection.GetEnumerator">
+            <summary>
+            Returns an enumerator that can iterate through the MyNeoReport.Section instance.
+            </summary>
+            <returns>An MyNeoReport.Section's enumerator.</returns>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.ObjectActionCollection.Insert(System.Int32,NeoDataType.MyNeoReport.ObjectAction)">
+            <summary>
+            Insert a MyNeoReport.Section instance into this collection at a specified index.
+            </summary>
+            <param name="index">Zero-based index.</param>
+            <param name="value">The MyNeoReport.Section instance to insert.</param>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.ObjectActionCollection.Item(System.Int32)">
+            <summary>
+            Gets or sets the value of the MyNeoReport.Section at a specific position in the SectionCollection.
+            </summary>
+        </member>
+        <member name="T:NeoDataType.MyNeoReport.ObjectActionCollection.ObjectActionCollectionEnumerator">
+            <summary>
+            Strongly typed enumerator of MyNeoReport.Section.
+            </summary>
+        </member>
+        <member name="F:NeoDataType.MyNeoReport.ObjectActionCollection.ObjectActionCollectionEnumerator._index">
+            <summary>
+            Current index
+            </summary>
+        </member>
+        <member name="F:NeoDataType.MyNeoReport.ObjectActionCollection.ObjectActionCollectionEnumerator._currentElement">
+            <summary>
+            Current element pointed to.
+            </summary>
+        </member>
+        <member name="F:NeoDataType.MyNeoReport.ObjectActionCollection.ObjectActionCollectionEnumerator._collection">
+            <summary>
+            Collection to enumerate.
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.ObjectActionCollection.ObjectActionCollectionEnumerator.#ctor(NeoDataType.MyNeoReport.ObjectActionCollection)">
+            <summary>
+            Default constructor for enumerator.
+            </summary>
+            <param name="collection">Instance of the collection to enumerate.</param>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.ObjectActionCollection.ObjectActionCollectionEnumerator.Reset">
+            <summary>
+            Reset the cursor, so it points to the beginning of the enumerator.
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.ObjectActionCollection.ObjectActionCollectionEnumerator.MoveNext">
+            <summary>
+            Advances the enumerator to the next queue of the enumeration, if one is currently available.
+            </summary>
+            <returns>true, if the enumerator was succesfully advanced to the next queue; false, if the enumerator has reached the end of the enumeration.</returns>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.ObjectActionCollection.ObjectActionCollectionEnumerator.Current">
+            <summary>
+            Gets the MyNeoReport.Section object in the enumerated SectionCollection currently indexed by this instance.
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.ObjectActionCollection.ObjectActionCollectionEnumerator.System#Collections#IEnumerator#Current">
+            <summary>
+            Gets the current element in the collection.
+            </summary>
+        </member>
+        <member name="T:NeoDataType.MyNeoReport.ActionManagerBase">
+            <summary>
+            Descrizione di riepilogo per ActionManagerBase.
+            </summary>
+        </member>
+        <member name="T:NeoDataType.MyNeoReport.TextRenderer">
+            <summary>
+            Descrizione di riepilogo per Label.
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.RendererBase.QueryRenderInfo(NeoDataType.MyNeoReport.InputRenderInfo,NeoDataType.MyNeoReport.OutputRenderInfo)">
+            <summary>
+            Used to analize the input rendering informations and set the information
+            about how the item will be rendered.
+            </summary>
+            <param name="info">Information about the current context state.</param>
+            <param name="output">Information to set about the item to be rendered.</param>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.TextRenderer.GetDefaultStringFormat(System.Boolean,System.Drawing.StringAlignment,NeoDataType.MyNeoReport.TextRightToLeft)">
+            <summary>
+            Get the default string format used by a TextRenderer based on the parameters pased.
+            If you want a custom string format to be used call SetStringFormat(StringFormat).
+            </summary>
+            <param name="wordWrap">The string will be drawn with word wrap.</param>
+            <param name="alignment">The alignment used for the drawn string.</param>
+            <param name="rightToLeft">The text direction used for the drawn string.</param>
+            <returns></returns>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.TextRenderer.GetDefaultStringFormat(NeoDataType.MyNeoReport.ITextItem)">
+            <summary>
+            Get the default string format used by a TextRenderer based on the ITextItem properties.
+            If you want a custom string format to be used call SetStringFormat(StringFormat).
+            </summary>
+        </member>
+        <member name="F:NeoDataType.MyNeoReport.OutputRenderInfo.ItemBounds">
+            <summary>
+            Set the rendering item bounds in pixel
+            </summary>
+        </member>
+        <member name="F:NeoDataType.MyNeoReport.OutputRenderInfo.ContinueOnNextPage">
+            <summary>
+            Set if the item don't fit this page and must continue on next page.
+            </summary>
+        </member>
+        <member name="T:NeoDataType.MyNeoReport.SectionCollection">
+            <summary>
+            Strongly typed collection of MyNeoReport.Section.
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.SectionCollection.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.SectionCollection.Add(NeoDataType.MyNeoReport.Section)">
+            <summary>
+            Append a MyNeoReport.Section entry to this collection.
+            </summary>
+            <param name="value">MyNeoReport.Section instance.</param>
+            <returns>The position into which the new element was inserted.</returns>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.SectionCollection.Contains(NeoDataType.MyNeoReport.Section)">
+            <summary>
+            Determines whether a specified MyNeoReport.Section instance is in this collection.
+            </summary>
+            <param name="value">MyNeoReport.Section instance to search for.</param>
+            <returns>True if the MyNeoReport.Section instance is in the collection; otherwise false.</returns>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.SectionCollection.IndexOf(NeoDataType.MyNeoReport.Section)">
+            <summary>
+            Retrieve the index a specified MyNeoReport.Section instance is in this collection.
+            </summary>
+            <param name="value">MyNeoReport.Section instance to find.</param>
+            <returns>The zero-based index of the specified MyNeoReport.Section instance. If the object is not found, the return value is -1.</returns>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.SectionCollection.Remove(NeoDataType.MyNeoReport.Section)">
+            <summary>
+            Removes a specified MyNeoReport.Section instance from this collection.
+            </summary>
+            <param name="value">The MyNeoReport.Section instance to remove.</param>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.SectionCollection.GetEnumerator">
+            <summary>
+            Returns an enumerator that can iterate through the MyNeoReport.Section instance.
+            </summary>
+            <returns>An MyNeoReport.Section's enumerator.</returns>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.SectionCollection.Insert(System.Int32,NeoDataType.MyNeoReport.Section)">
+            <summary>
+            Insert a MyNeoReport.Section instance into this collection at a specified index.
+            </summary>
+            <param name="index">Zero-based index.</param>
+            <param name="value">The MyNeoReport.Section instance to insert.</param>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.SectionCollection.Item(System.Int32)">
+            <summary>
+            Gets or sets the value of the MyNeoReport.Section at a specific position in the SectionCollection.
+            </summary>
+        </member>
+        <member name="T:NeoDataType.MyNeoReport.UI.Preview">
+            <summary>
+            Descrizione di riepilogo per Preview.
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.UI.Preview.Dispose(System.Boolean)">
+            <summary> 
+            Pulire le risorse in uso.
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.UI.Preview.InitializeComponent">
+            <summary> 
+            Metodo necessario per il supporto della finestra di progettazione. Non modificare 
+            il contenuto del metodo con l'editor di codice.
+            </summary>
+        </member>
+        <member name="F:NeoDataType.MyNeoReport.Forms.ScriptTextbox.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.Forms.ScriptTextbox.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.Forms.ScriptTextbox.InitializeComponent">
+            <summary>
+            Metodo necessario per il supporto della finestra di progettazione. Non modificare
+            il contenuto del metodo con l'editor di codice.
+            </summary>
+        </member>
+        <member name="T:NeoDataType.MyNeoReport.ItemBaseCollection">
+            <summary>
+            Strongly typed collection of MyNeoReport.Item.
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.ItemBaseCollection.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.ItemBaseCollection.Add(NeoDataType.MyNeoReport.ItemBase)">
+            <summary>
+            Append a MyNeoReport.Item entry to this collection.
+            </summary>
+            <param name="value">MyNeoReport.Item instance.</param>
+            <returns>The position into which the new element was inserted.</returns>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.ItemBaseCollection.Contains(NeoDataType.MyNeoReport.ItemBase)">
+            <summary>
+            Determines whether a specified MyNeoReport.Item instance is in this collection.
+            </summary>
+            <param name="value">MyNeoReport.Item instance to search for.</param>
+            <returns>True if the MyNeoReport.Item instance is in the collection; otherwise false.</returns>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.ItemBaseCollection.IndexOf(NeoDataType.MyNeoReport.ItemBase)">
+            <summary>
+            Retrieve the index a specified MyNeoReport.Item instance is in this collection.
+            </summary>
+            <param name="value">MyNeoReport.Item instance to find.</param>
+            <returns>The zero-based index of the specified MyNeoReport.Item instance. If the object is not found, the return value is -1.</returns>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.ItemBaseCollection.Remove(NeoDataType.MyNeoReport.ItemBase)">
+            <summary>
+            Removes a specified MyNeoReport.Item instance from this collection.
+            </summary>
+            <param name="value">The MyNeoReport.Item instance to remove.</param>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.ItemBaseCollection.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+            Returns an enumerator that can iterate through the MyNeoReport.Item instance.
+            </summary>
+            <returns>An MyNeoReport.Item's enumerator.</returns>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.ItemBaseCollection.Insert(System.Int32,NeoDataType.MyNeoReport.ItemBase)">
+            <summary>
+            Insert a MyNeoReport.Item instance into this collection at a specified index.
+            </summary>
+            <param name="index">Zero-based index.</param>
+            <param name="value">The MyNeoReport.Item instance to insert.</param>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.ItemBaseCollection.Item(System.Int32)">
+            <summary>
+            Gets or sets the value of the MyNeoReport.Item at a specific position in the ItemCollection.
+            </summary>
+        </member>
+        <member name="T:NeoDataType.MyNeoReport.GroupSectionActionManager">
+            <summary>
+            Descrizione di riepilogo per ActionManagerBase.
+            </summary>
+        </member>
+        <member name="T:NeoDataType.MyNeoReport.Page">
+            <summary>
+            Descrizione di riepilogo per Page.
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.Page.Clear">
+            <summary>
+            Clears the page and make it blank with default sections.
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.Page.ToString">
+            <summary>
+            Return the name of the section.
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.Page.RestoreSaved">
+            <summary>
+            The item selected on the page.
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.Page.LayoutDirection">
+            <summary>
+            Indicate if the layout direction of the items is right-to-left or left-to-right
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.Page.DefaultTextDirection">
+            <summary>
+            Get or set the text direction of text items with the property RightToLeft 
+            set to TextRightToLeft.PageDefault.
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.Page.Sections">
+            <summary>
+            Collection of section in the Page.
+            </summary>
+            <remarks>
+            Default sections name are: 
+            <list type="bullet">
+            ReportHeader,
+            PageHeader,
+            Details,
+            PageFooter,
+            ReportFooter.
+            </list>
+            </remarks>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.Page.ReportHeader">
+            <summary>
+            The report header section.
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.Page.PageHeader">
+            <summary>
+            The page header section.
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.Page.Details">
+            <summary>
+            The details section.
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.Page.PageFooter">
+            <summary>
+            The page footer section.
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.Page.ReportFooter">
+            <summary>
+            The report footer section.
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.Page.Landscape">
+            <summary>
+            Get or set if the page is printed in landscape mode.
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.Page.Width">
+            <summary>
+            The page width in the unit specified by the Units property.
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.Page.Height">
+            <summary>
+            The page heigth in the unit specified by the Units property.
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.Page.Units">
+            <summary>
+            The unit used for the page measures.
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.Page.GlobalCode">
+            <summary>
+            Script code for global variables and function.
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.Section.SetDataSource(NeoDataType.MyNeoReport.DataSourceBase)">
+            <summary>
+            Set the new data source.
+            </summary>
+            <param name="ds">The new data source. 
+            Default datasources are OleDbDataSource and TableDataSource.</param>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.Section.OnNewPage">
+            <summary>
+            Normal: The section is printed after the last one. The section is printed on a new page if there is not enough space on the current page.
+            Always: The section is printed at begin on a new page.
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.Section.MinHeight">
+            <summary>
+            Indicate the minimum size that a section can have.
+            This avoid an autosized section to be splitted into too small pieces at the end of the page.
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.GroupSection.MoveDown">
+            <summary>
+            Move the section under the following one.
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.GroupSection.MoveUp">
+            <summary>
+            Move the section above the previous one.
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.GroupSection.GroupFieldList">
+            <summary>
+            Get or set the field list on wich the group works.
+            Fields are comma separated. 
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.GroupSection.GroupFields">
+            <summary>
+            Get or set the field list on wich the group works.
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.GroupSection.OnNewPage">
+            <summary>
+            Get or set if the section should be printed at the begin of a new page or on the same page of the previous section.
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.GroupSection.PrintBeforeDetails">
+            <summary>
+            Let you know if the section is printed before of after the details section
+            </summary>
+        </member>
+        <member name="T:NeoDataType.MyNeoReport.ItemBaseActionManager">
+            <summary>
+            Descrizione di riepilogo per ActionManagerBase.
+            </summary>
+        </member>
+        <member name="F:NeoDataType.MyNeoReport.UI.ParameterForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.UI.ParameterForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.UI.ParameterForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:NeoDataType.MyNeoReport.DetailsSection">
+            <summary>
+            Descrizione di riepilogo per DetailsSection.
+            </summary>
+        </member>
+        <member name="T:NeoDataType.MyNeoReport.ReportUpdater">
+            <summary>
+            Descrizione di riepilogo per Updater.
+            </summary>
+        </member>
+        <member name="T:NeoDataType.MyNeoReport.UI.PageControl">
+            <summary>
+            Descrizione di riepilogo per Page.
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.UI.PageControl.InitializeComponent">
+            <summary> 
+            Metodo necessario per il supporto della finestra di progettazione. Non modificare 
+            il contenuto del metodo con l'editor di codice.
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.UI.PageControl.DeselectAllItems">
+            <summary>
+            Deselects all the selected items.
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.UI.PageControl.DeselectItem(NeoDataType.MyNeoReport.ItemBase)">
+            <summary>
+            Deselects the specified item.
+            </summary>
+            <param name="item">The item to be deselected.</param>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.UI.PageControl.SelectItem(NeoDataType.MyNeoReport.ItemBase)">
+            <summary>
+            Selects the specified item.
+            </summary>
+            <param name="item">The item to be selected.</param>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.UI.PageControl.Dispose(System.Boolean)">
+            <summary> 
+            Pulire le risorse in uso.
+            </summary>
+        </member>
+        <member name="F:NeoDataType.MyNeoReport.AnchorStyle.None">
+            <summary>
+            Item won't anchor to any section bounds.
+            </summary>
+        </member>
+        <member name="F:NeoDataType.MyNeoReport.AnchorStyle.Top">
+            <summary>
+            Item won't anchor to any section bounds.
+            The same of None
+            </summary>
+        </member>
+        <member name="F:NeoDataType.MyNeoReport.AnchorStyle.Bottom">
+            <summary>
+            Item will anchor to the bottom of the section.
+            If the section will resize the distance between the item bottom and
+            the section bottom will remain constant.
+            </summary>
+        </member>
+        <member name="F:NeoDataType.MyNeoReport.AnchorStyle.TopAndBottom">
+            <summary>
+            Item will anchor both to the top and the bottom of the section.
+            If the section will resize the distance between the item bounds and
+            the section bounds will remain constant.
+            </summary>
+        </member>
+        <member name="T:NeoDataType.MyNeoReport.PageActionManager">
+            <summary>
+            Descrizione di riepilogo per ActionManagerBase.
+            </summary>
+        </member>
+        <member name="T:NeoDataType.MyNeoReport.ImageActionManager">
+            <summary>
+            Descrizione di riepilogo per ActionManagerBase.
+            </summary>
+        </member>
+        <member name="T:NeoDataType.MyNeoReport.UI.IconsComponent">
+            <summary>
+            Descrizione di riepilogo per Icons.
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.UI.IconsComponent.Dispose(System.Boolean)">
+            <summary> 
+            Pulire le risorse in uso.
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.UI.IconsComponent.InitializeComponent">
+            <summary>
+            Metodo necessario per il supporto della finestra di progettazione. Non modificare
+            il contenuto del metodo con l'editor di codice.
+            </summary>
+        </member>
+        <member name="F:NeoDataType.MyNeoReport.UI.DataFieldEditorControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.UI.DataFieldEditorControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.UI.DataFieldEditorControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:NeoDataType.MyNeoReport.Report">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.Report.GetPrintingString(System.String)">
+            <summary>
+            Check for Special Functions contained into the string passed and returns the evaluated string.
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.Report.ShowPreview(NeoDataType.MyNeoReport.PreviewWindowState)">
+            <summary>
+            Show the preview into the standard preview dialog window.
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.Report.ClearDiagnostics">
+            <summary>
+            Clear the diagnostic messages list contained into DiagnosticMessages property.
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.Report.AddDiagnostic(System.String)">
+            <summary>
+            Let you add a diagnostic message.
+            </summary>
+            <param name="msg">The message text.</param>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.Report.AddDiagnostic(NeoDataType.MyNeoReport.ReportMessage)">
+            <summary>
+            Let you add a diagnostic message.
+            </summary>
+            <param name="msg">A ReportMessage message</param>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.Report.GetSource">
+            <summary>
+            Returns the XML source of the report document.
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.Report.GetScriptCode">
+            <summary>
+            Returns the script code that will be compiled.
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.Report.CompileScript">
+            <summary>
+            Compile the script.
+            </summary>
+            <remarks>If the script cannot be compiled the error list is added to the DiagnosticMessages property.</remarks>
+            <returns>
+            True if the script is correctly compiled.
+            False if the script cannot be compiled.
+            </returns>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.Report.SerializeDataToXml(System.String)">
+            <summary>
+            Write a file named [report_name].xml in the destination directory passed as parameter.
+            [report_name] is Report.FileName without extension, ie: MyReport.xml
+            See ReportFromSerializedXml() to get a report with this data loaded.
+            </summary>
+            <param name="destDirectory">The directory where the serialized file will be written.</param>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.Report.ReportFromSerializedXml(System.String)">
+            <summary>
+            Get report copy of this report instance.
+            The report copy will have all the DataSource of tipe TableDataSource with
+            the data loaded from the filename.
+            See SerializeDataToXml() to create a data file.
+            </summary>
+            <param name="fileName">The file that contains the serialized data.</param>
+            <returns></returns>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.Report.Engine">
+            <summary>
+            Get the print engine.
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.Report.PrinterSettings">
+            <summary>
+            Get or set the PrinterSettings for the document that will be printed.
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.Report.FirstPage">
+            <summary>
+            The first page printed or previewed.
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.Report.PageCount">
+            <summary>
+            The number of pages printed or previewed.
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.Report.IsPrinting">
+            <summary>
+            Returns if the report is printing.
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.Report.IsPrewiewing">
+            <summary>
+            Returns if the report is previewing.
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.Report.FileName">
+            <summary>
+            The full path of the report file.
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.Report.NeedCompile">
+            <summary>
+            Returns if the script need to be recompiled.
+            </summary>
+        </member>
+        <member name="F:NeoDataType.MyNeoReport.RenderSelectLevel.Print">
+            <summary>
+            The item is printing.
+            </summary>
+        </member>
+        <member name="F:NeoDataType.MyNeoReport.RenderSelectLevel.Design">
+            <summary>
+            The item is designing.
+            </summary>
+        </member>
+        <member name="F:NeoDataType.MyNeoReport.RenderSelectLevel.Selected">
+            <summary>
+            The item is designing as selected.
+            </summary>
+        </member>
+        <member name="T:NeoDataType.MyNeoReport.DataLabel">
+            <summary>
+            Descrizione di riepilogo per Label.
+            </summary>
+        </member>
+        <member name="T:NeoDataType.MyNeoReport.DataItemBase">
+            <summary>
+            Descrizione di riepilogo per DataItemBase.
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.DataLabel.Format">
+            <summary>
+            Get or set the format for the data bounded.
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.DataLabel.WordWrap">
+            <summary>
+            Indicates whether a data automatically wraps words to the beginning of the next line when necessary.
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.DataLabel.VerticalSizeMode">
+            <summary>
+            Indicates if the item height is resized on the data size height or is fixed.
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.DataLabel.HorizontalSizeMode">
+            <summary>
+            Indicates if the item height is resized on the data size width or is fixed.
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.DataLabel.NullText">
+            <summary>
+            Set or get the text printed if the bounded data field is NULL.
+            </summary>
+        </member>
+        <member name="T:NeoDataType.MyNeoReport.ShapeRenderer">
+            <summary>
+            Descrizione di riepilogo per Label.
+            </summary>
+        </member>
+        <member name="T:NeoDataType.MyNeoReport.DataImage">
+            <summary>
+            Descrizione di riepilogo per Label.
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.DataImage.GetRenderer">
+            <summary>
+            Get the renderer used.
+            </summary>
+            <returns>The renderer used.</returns>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.DataImage.SetData(System.Object)">
+            <summary>
+            Set the data bounded to the item.
+            </summary>
+            <param name="data">The data that will be printed.</param>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.DataImage.UseImageFile">
+            <summary>
+            Define if the DataField contains the image path or the picture.
+            </summary>
+        </member>
+        <member name="T:NeoDataType.MyNeoReport.UI.Ruler">
+            <summary>
+            Summary description for Ruler.
+            </summary>
+        </member>
+        <member name="F:NeoDataType.MyNeoReport.UI.Ruler.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.UI.Ruler.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:NeoDataType.MyNeoReport.ExportManagerBase">
+            <summary>
+            .
+            </summary>
+        </member>
+        <member name="T:NeoDataType.MyNeoReport.ImageRenderer">
+            <summary>
+            Descrizione di riepilogo per Label.
+            </summary>
+        </member>
+        <member name="T:NeoDataType.MyNeoReport.CollectionManager">
+            <summary>
+            Descrizione di riepilogo per CollectionManager.
+            </summary>
+        </member>
+        <member name="F:NeoDataType.MyNeoReport.UI.PreviewForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.UI.PreviewForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.UI.PreviewForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:NeoDataType.MyNeoReport.UI.BrowserComponent">
+            <summary>
+            Descrizione di riepilogo per Icons.
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.UI.BrowserComponent.Dispose(System.Boolean)">
+            <summary> 
+            Pulire le risorse in uso.
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.UI.BrowserComponent.InitializeComponent">
+            <summary>
+            Metodo necessario per il supporto della finestra di progettazione. Non modificare
+            il contenuto del metodo con l'editor di codice.
+            </summary>
+        </member>
+        <member name="T:NeoDataType.MyNeoReport.SpecialFunction">
+            <summary>
+            Descrizione di riepilogo per Utility.
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.ArrayUtils.Equals``1(``0[],``0[])">
+            <summary>
+            Determines whether the specified array are considered equal.
+            Arrays are considered equal if they have the same elements in the same order or if they are both null.
+            </summary>
+            <typeparam name="T">The type of the arrays to be compared.</typeparam>
+            <param name="array1">The first array to compare.</param>
+            <param name="array2">The second array be compare.</param>
+            <returns>True if the arrays are equals, otherwise, false.</returns>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.ArrayUtils.Equals``2(``0[],``1[])">
+            <summary>
+            Determines whether the specified array are considered equal.
+            Arrays are considered equal if they have the same elements in the same order or if they are both null.
+            The type of the second array must derive from the type of the first array.
+            </summary>
+            <typeparam name="T1">The type of the first arrays to be compared.</typeparam>
+            <typeparam name="T2">The type of the second arrays to be compared.</typeparam>
+            <param name="array1">The first array to compare.</param>
+            <param name="array2">The second array be compare.</param>
+            <returns>True if the arrays are equals, otherwise, false.</returns>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.ArrayUtils.Convert``2(``0[])">
+            <summary>
+            Converts an array of type fromT to an array of type toT.
+            </summary>
+            <typeparam name="fromT">The type of the source array.</typeparam>
+            <typeparam name="toT">The type of the array to be returned.</typeparam>
+            <param name="array">The array to be converted.</param>
+            <returns>An array of type toT containing the same elements of the source array.</returns>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.ArrayUtils.ChangeType``2(``0[])">
+            <summary>
+            Returns an array with the elements of the passed array with the type changed by the call to System.Convert.ChangeType().
+            </summary>
+            <typeparam name="fromT">The type of the source array.</typeparam>
+            <typeparam name="toT">The type of the destination array.</typeparam>
+            <param name="array">The source array.</param>
+            <returns>An array with the element of toT type.</returns>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.ArrayUtils.Merge``1(``0[],``0[])">
+            <summary>
+            Merges two arrays into a single array.
+            </summary>
+            <typeparam name="T">The type of the arrays.</typeparam>
+            <param name="array1">The first array to be merged.</param>
+            <param name="array2">The second array to be merged.</param>
+            <returns>An array containing the elements of the two arrays.</returns>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.ArrayUtils.Union``1(``0[],``0[])">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="array1"></param>
+            <param name="array2"></param>
+            <returns></returns>
+        </member>
+        <member name="T:NeoDataType.MyNeoReport.Scale">
+            <summary>
+            Descrizione di riepilogo per ScaleManager.
+            </summary>
+        </member>
+        <member name="T:NeoDataType.MyNeoReport.PrintEngine">
+            <summary>
+            Descrizione di riepilogo per PrintEngine.
+            </summary>
+        </member>
+        <member name="T:NeoDataType.MyNeoReport.Properties.Resources">
+            <summary>
+              Classe di risorse fortemente tipizzata per la ricerca di stringhe localizzate e così via.
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.Properties.Resources.ResourceManager">
+            <summary>
+              Restituisce l'istanza di ResourceManager nella cache utilizzata da questa classe.
+            </summary>
+        </member>
+        <member name="P:NeoDataType.MyNeoReport.Properties.Resources.Culture">
+            <summary>
+              Esegue l'override della proprietà CurrentUICulture del thread corrente per tutte le
+              ricerche di risorse eseguite utilizzando questa classe di risorse fortemente tipizzata.
+            </summary>
+        </member>
+        <member name="F:NeoDataType.MyNeoReport.UI.ParameterControl.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.UI.ParameterControl.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:NeoDataType.MyNeoReport.UI.ParameterControl.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+    </members>
+</doc>

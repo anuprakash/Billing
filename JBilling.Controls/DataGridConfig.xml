@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DataGrids>
+  <DataGrid name ="dgSalesOrder">
+    <Column mapto ="LineNumber" text="Line Number" readonly ="true"/>
+    <Column mapto ="PartNumber" text="Part Number" />
+    <Column mapto ="Quantity" text="Quantity" />
+    <Column mapto ="PartPrice" text="Part Price" />
+  </DataGrid>
+</DataGrids>

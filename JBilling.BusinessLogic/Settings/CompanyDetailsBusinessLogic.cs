@@ -16,7 +16,7 @@ namespace JBilling.BusinessLogic.Settings
             {
                 using (IDbConnection connection = DBAccess.OpenConnection())
                 {
-                    using (IDbCommand updateCommand = DBAccess.GetCommand(connection, "Settings.CompanyDetailsUpdate", "CompanyName", "CompanyDesc", "CompanyAddress", "CompanyEmail", "ContactName", "CompanyLogo"))
+                    using (IDbCommand updateCommand = DBAccess.GetCommand(connection, "Settings.CompanyDetailsUpdate", "CompanyName", "CompanyDesc", "CompanyAddress", "CompanyEmail", "ContactName", "CompanyWebsite", "CompanyLogo", "TaxRegistrationNo", "ContactNo"))
                     {
                         DBAccess.UpdateDataset(ds, null, updateCommand, null, "CompanyDetails");
                     }

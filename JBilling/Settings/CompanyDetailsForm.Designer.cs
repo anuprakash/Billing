@@ -36,11 +36,17 @@
             this.lblCompanyAddress = new System.Windows.Forms.Label();
             this.lblCompanyName = new System.Windows.Forms.Label();
             this.grpCompanyContacts = new System.Windows.Forms.GroupBox();
-            this.pbCompanyImage = new System.Windows.Forms.PictureBox();
-            this.txtContactPerson = new System.Windows.Forms.TextBox();
-            this.lblContactPerson = new System.Windows.Forms.Label();
+            this.txtTaxRegNo = new JBilling.Controls.JBillingTextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtCompanyWebsite = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.txtContactEmail = new System.Windows.Forms.TextBox();
             this.lblContactEmail = new System.Windows.Forms.Label();
+            this.txtContactPerson = new System.Windows.Forms.TextBox();
+            this.lblContactPerson = new System.Windows.Forms.Label();
+            this.pbCompanyImage = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtContactNo = new JBilling.Controls.JBillingTextBox();
             this.grpCompanyDetails.SuspendLayout();
             this.grpCompanyContacts.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbCompanyImage)).BeginInit();
@@ -113,6 +119,12 @@
             // 
             // grpCompanyContacts
             // 
+            this.grpCompanyContacts.Controls.Add(this.txtContactNo);
+            this.grpCompanyContacts.Controls.Add(this.label3);
+            this.grpCompanyContacts.Controls.Add(this.txtTaxRegNo);
+            this.grpCompanyContacts.Controls.Add(this.label2);
+            this.grpCompanyContacts.Controls.Add(this.txtCompanyWebsite);
+            this.grpCompanyContacts.Controls.Add(this.label1);
             this.grpCompanyContacts.Controls.Add(this.txtContactEmail);
             this.grpCompanyContacts.Controls.Add(this.lblContactEmail);
             this.grpCompanyContacts.Controls.Add(this.txtContactPerson);
@@ -122,31 +134,39 @@
             this.grpCompanyContacts.Size = new System.Drawing.Size(455, 173);
             this.grpCompanyContacts.TabIndex = 4;
             this.grpCompanyContacts.TabStop = false;
-            this.grpCompanyContacts.Text = "Company Contacts";
+            this.grpCompanyContacts.Text = "Contact Information";
             // 
-            // pbCompanyImage
+            // txtTaxRegNo
             // 
-            this.pbCompanyImage.Location = new System.Drawing.Point(541, 13);
-            this.pbCompanyImage.Name = "pbCompanyImage";
-            this.pbCompanyImage.Size = new System.Drawing.Size(339, 173);
-            this.pbCompanyImage.TabIndex = 5;
-            this.pbCompanyImage.TabStop = false;
+            this.txtTaxRegNo.Location = new System.Drawing.Point(159, 143);
+            this.txtTaxRegNo.Name = "txtTaxRegNo";
+            this.txtTaxRegNo.Size = new System.Drawing.Size(274, 20);
+            this.txtTaxRegNo.TabIndex = 10;
             // 
-            // txtContactPerson
+            // label2
             // 
-            this.txtContactPerson.Location = new System.Drawing.Point(158, 28);
-            this.txtContactPerson.Name = "txtContactPerson";
-            this.txtContactPerson.Size = new System.Drawing.Size(274, 20);
-            this.txtContactPerson.TabIndex = 4;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(16, 148);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(101, 13);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Tax Registration No";
             // 
-            // lblContactPerson
+            // txtCompanyWebsite
             // 
-            this.lblContactPerson.AutoSize = true;
-            this.lblContactPerson.Location = new System.Drawing.Point(17, 31);
-            this.lblContactPerson.Name = "lblContactPerson";
-            this.lblContactPerson.Size = new System.Drawing.Size(80, 13);
-            this.lblContactPerson.TabIndex = 3;
-            this.lblContactPerson.Text = "Contact Person";
+            this.txtCompanyWebsite.Location = new System.Drawing.Point(159, 90);
+            this.txtCompanyWebsite.Name = "txtCompanyWebsite";
+            this.txtCompanyWebsite.Size = new System.Drawing.Size(274, 20);
+            this.txtCompanyWebsite.TabIndex = 8;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(18, 93);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(90, 13);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Company website";
             // 
             // txtContactEmail
             // 
@@ -164,6 +184,46 @@
             this.lblContactEmail.TabIndex = 5;
             this.lblContactEmail.Text = "Contact Email";
             // 
+            // txtContactPerson
+            // 
+            this.txtContactPerson.Location = new System.Drawing.Point(158, 28);
+            this.txtContactPerson.Name = "txtContactPerson";
+            this.txtContactPerson.Size = new System.Drawing.Size(274, 20);
+            this.txtContactPerson.TabIndex = 4;
+            // 
+            // lblContactPerson
+            // 
+            this.lblContactPerson.AutoSize = true;
+            this.lblContactPerson.Location = new System.Drawing.Point(17, 31);
+            this.lblContactPerson.Name = "lblContactPerson";
+            this.lblContactPerson.Size = new System.Drawing.Size(80, 13);
+            this.lblContactPerson.TabIndex = 3;
+            this.lblContactPerson.Text = "Contact Person";
+            // 
+            // pbCompanyImage
+            // 
+            this.pbCompanyImage.Location = new System.Drawing.Point(541, 13);
+            this.pbCompanyImage.Name = "pbCompanyImage";
+            this.pbCompanyImage.Size = new System.Drawing.Size(339, 173);
+            this.pbCompanyImage.TabIndex = 5;
+            this.pbCompanyImage.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(18, 120);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(84, 13);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "Contact Number";
+            // 
+            // txtContactNo
+            // 
+            this.txtContactNo.Location = new System.Drawing.Point(159, 116);
+            this.txtContactNo.Name = "txtContactNo";
+            this.txtContactNo.Size = new System.Drawing.Size(274, 20);
+            this.txtContactNo.TabIndex = 12;
+            // 
             // CompanyDetailsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -174,6 +234,10 @@
             this.Controls.Add(this.grpCompanyDetails);
             this.Name = "CompanyDetailsForm";
             this.Text = "Company Details";
+            this.Controls.SetChildIndex(this.btnSave, 0);
+            this.Controls.SetChildIndex(this.btnCancel, 0);
+            this.Controls.SetChildIndex(this.btnSaveClose, 0);
+            this.Controls.SetChildIndex(this.btnNew, 0);
             this.Controls.SetChildIndex(this.grpCompanyDetails, 0);
             this.Controls.SetChildIndex(this.grpCompanyContacts, 0);
             this.Controls.SetChildIndex(this.pbCompanyImage, 0);
@@ -201,5 +265,11 @@
         private System.Windows.Forms.Label lblContactPerson;
         private System.Windows.Forms.TextBox txtContactEmail;
         private System.Windows.Forms.Label lblContactEmail;
+        private System.Windows.Forms.TextBox txtCompanyWebsite;
+        private System.Windows.Forms.Label label1;
+        private Controls.JBillingTextBox txtTaxRegNo;
+        private System.Windows.Forms.Label label2;
+        private Controls.JBillingTextBox txtContactNo;
+        private System.Windows.Forms.Label label3;
     }
 }

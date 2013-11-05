@@ -11,7 +11,7 @@ namespace JBilling.DataAccess
     {
         private static string GetConnectionString()
         {
-            return @"Data Source=MIHIRJOSHI-HP\SQLEXPRESS; Initial Catalog=JBilling; Integrated Security=true";//User ID=JBilling; Password=jbilling@123";
+            return @"Data Source=MIHIRJOSHI-HP\SQLEXPRESS; Initial Catalog=JBilling; Integrated Security=true"; //User ID=JUser; Password=jbilling@123";
         }
 
         /// <summary>
@@ -62,6 +62,9 @@ namespace JBilling.DataAccess
             if (connection == null || dataSet == null || strProcName == null || strTableName == null)
                 return;
 
+            if (dataSet.Tables[strTableName] != null)
+                dataSet.Tables[strTableName].Clear();
+
             using(IDbCommand command = new SqlCommand())
             {
                 SqlDataAdapter adapter = new SqlDataAdapter();
@@ -90,7 +93,7 @@ namespace JBilling.DataAccess
 
             for (int i = 0; i < parameters.Length; i++)
             {
-                ((SqlCommand)command).Parameters[i].Value = parameters[i];
+                ((SqlCommand)command).Parameters[i + 1].Value = parameters[i];
             }
         }
 
@@ -128,7 +131,7 @@ namespace JBilling.DataAccess
             if (insertCommand != null) adapter.InsertCommand = (SqlCommand)insertCommand;
             if (updateCommand != null) adapter.UpdateCommand = (SqlCommand)updateCommand;
             if (deleteCommand != null) adapter.DeleteCommand = (SqlCommand)deleteCommand;
-
+            
             return adapter.Update(dataSet, strTableName);
         }
 
@@ -138,6 +141,19 @@ namespace JBilling.DataAccess
             command.Connection = connection;
             command.CommandText = strProcName;
             command.CommandType = CommandType.StoredProcedure;
+
+            AttachParameters(command, parameters);
+
+            return command;
+        }
+
+        public static IDbCommand GetCommand(IDbConnection connection, IDbTransaction tran, string strProcName, params string[] parameters)
+        {
+            IDbCommand command = new SqlCommand();
+            command.Connection = connection;
+            command.CommandText = strProcName;
+            command.CommandType = CommandType.StoredProcedure;
+            command.Transaction = tran;
 
             AttachParameters(command, parameters);
 

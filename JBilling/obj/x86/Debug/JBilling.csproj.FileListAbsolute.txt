@@ -20,3 +20,9 @@ G:\Project Work\Visual Studio Projects\Billing\JBilling\JBilling\bin\Debug\JBill
 G:\Project Work\Visual Studio Projects\Billing\JBilling\JBilling\bin\Debug\JBilling.BusinessLogic.pdb
 G:\Project Work\Visual Studio Projects\Billing\JBilling\JBilling\bin\Debug\JBilling.DataSets.pdb
 G:\Project Work\Visual Studio Projects\Billing\JBilling\JBilling\bin\Debug\JBilling.DataAccess.pdb
+G:\Project Work\Visual Studio Projects\Billing\JBilling\JBilling\bin\Debug\JBilling.Reporting.dll
+G:\Project Work\Visual Studio Projects\Billing\JBilling\JBilling\bin\Debug\NeoDataType.MyNeoReport.dll
+G:\Project Work\Visual Studio Projects\Billing\JBilling\JBilling\bin\Debug\JBilling.Reporting.pdb
+G:\Project Work\Visual Studio Projects\Billing\JBilling\JBilling\bin\Debug\NeoDataType.LiveCodeEngine.dll
+G:\Project Work\Visual Studio Projects\Billing\JBilling\JBilling\bin\Debug\NeoDataType.MyNeoReport.xml
+G:\Project Work\Visual Studio Projects\Billing\JBilling\JBilling\obj\x86\Debug\JBilling.Commercial.CompanyForm.resources

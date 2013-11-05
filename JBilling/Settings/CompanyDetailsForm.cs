@@ -57,10 +57,11 @@ namespace JBilling.Settings
             base.InitializeForm();
 
             CompanyDetailsDataSet = new DataSets.Settings.CompanyDetailsDataSet();
-
-            _businessLogic.GetCompanyData(CompanyDetailsDataSet);
+            btnNew.Visible = false;
 
             BindControls();
+
+            _businessLogic.GetCompanyData(CompanyDetailsDataSet);
 
             SetValuesToControls();
         }
@@ -90,6 +91,13 @@ namespace JBilling.Settings
             txtCompanyAddress.Leave += new EventHandler(TextBoxLeft);
             txtContactEmail.Leave += new EventHandler(TextBoxLeft);
             txtContactPerson.Leave += new EventHandler(TextBoxLeft);
+            txtContactNo.Leave += new EventHandler(ChangeData);
+            txtTaxRegNo.Leave += new EventHandler(ChangeData);
+        }
+
+        void ChangeData(object sender, EventArgs e)
+        {
+            DataChanged = true;
         }
 
         protected override void DetachEvents()
@@ -100,6 +108,20 @@ namespace JBilling.Settings
             txtCompanyAddress.Leave -= new EventHandler(TextBoxLeft);
             txtContactEmail.Leave -= new EventHandler(TextBoxLeft);
             txtContactPerson.Leave -= new EventHandler(TextBoxLeft);
+            txtContactNo.Leave -= new EventHandler(ChangeData);
+            txtTaxRegNo.Leave -= new EventHandler(ChangeData);
+        }
+
+        protected override void OnCancel(object sender, EventArgs e)
+        {
+            base.OnCancel(sender, e);
+
+            txtCompanyName.Text = CompanyDetailsDataSet.CompanyDetails[0].CompanyName;
+            txtCompanyDesc.Text = CompanyDetailsDataSet.CompanyDetails[0].CompanyDesc;
+            txtCompanyAddress.Text = CompanyDetailsDataSet.CompanyDetails[0].CompanyAddress;
+            txtContactEmail.Text = CompanyDetailsDataSet.CompanyDetails[0].CompanyEmail;
+            txtContactPerson.Text = CompanyDetailsDataSet.CompanyDetails[0].ContactName;
+            txtCompanyWebsite.Text = CompanyDetailsDataSet.CompanyDetails[0].CompanyWebsite;
         }
         #endregion
 
@@ -110,10 +132,12 @@ namespace JBilling.Settings
         /// </summary>
         private void BindControls()
         {
-            txtCompanyName.DataBindings.Add("Text", CompanyDetailsDataSet, "CompanyDetails.CompanyName");
+            txtCompanyName.DataBindings.Add("Text", CompanyDetailsDataSet.CompanyDetails, CompanyDetailsDataSet.CompanyDetails.CompanyNameColumn.ToString());
             txtCompanyAddress.DataBindings.Add("Text", CompanyDetailsDataSet, "CompanyDetails.CompanyAddress");
             pbCompanyImage.DataBindings.Add("Image", CompanyDetailsDataSet, "CompanyDetails.CompanyLogo");
             txtCompanyDesc.DataBindings.Add("Text", CompanyDetailsDataSet, "CompanyDetails.CompanyDesc");
+            txtTaxRegNo.SetDataBindings(CompanyDetailsDataSet, "CompanyDetails", "TaxRegistrationNo");
+            txtContactNo.SetDataBindings(CompanyDetailsDataSet, "CompanyDetails", "ContactNo");
         }
 
         private void SetValuesToControls()
@@ -123,6 +147,7 @@ namespace JBilling.Settings
             txtCompanyDesc.Text = CompanyDetailsDataSet.CompanyDetails[0].CompanyDesc;
             txtContactPerson.Text = CompanyDetailsDataSet.CompanyDetails[0].ContactName;
             txtContactEmail.Text = CompanyDetailsDataSet.CompanyDetails[0].CompanyEmail;
+            txtCompanyWebsite.Text = CompanyDetailsDataSet.CompanyDetails[0].CompanyWebsite;
         }
 
         void TextBoxLeft(object sender, EventArgs e)
@@ -164,6 +189,12 @@ namespace JBilling.Settings
                         return;
 
                     CompanyDetailsDataSet.CompanyDetails[0].CompanyEmail = txtSender.Text;
+                    break;
+                case "txtCompanyWebsite":
+                    if (CompanyDetailsDataSet.CompanyDetails[0].CompanyWebsite == txtSender.Text)
+                        return;
+
+                    CompanyDetailsDataSet.CompanyDetails[0].CompanyWebsite = txtSender.Text;
                     break;
             }
 

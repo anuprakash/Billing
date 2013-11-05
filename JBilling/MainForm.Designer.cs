@@ -38,7 +38,7 @@
             this.ClientSize = new System.Drawing.Size(980, 591);
             this.IsMdiContainer = true;
             this.Name = "MainForm";
-            this.Text = "JBilling";
+            this.Text = "A Billing Solution - Janacksus Inc.";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
 
